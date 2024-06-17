@@ -1,0 +1,321 @@
+html {
+    min-width: 320px;
+}
+@font-face {
+    font-family: "TT Lakes";
+    font-weight: normal;
+    src: local("TT Lakes"),
+    url("./TTLakes/TTLakes-Medium.woff") format("woff"),
+    url("./TTLakes/TTLakes-Light.woff") format("woff");
+}
+
+body {
+    font-family: "TT Lakes", sans-serif;
+    margin: 0;
+}
+
+.block-header {
+    display: flex;
+    height: 88px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px #D9FFF5;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    left: 16px;
+    border-radius: 20px;
+    border: 0;
+    background: #FF3E79;
+}
+
+.block-header__icon--logo {
+    width: 96.55px;
+    height: 50.81px;
+}
+
+.block-header__separator {
+    width: 2px;
+    height: 32px;   
+    border: solid 2px #EAEAEA;
+}
+
+.main {
+    overflow: hidden;
+    min-width: 320px;
+}
+
+.main-heading {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 304px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-heading__column--blue {
+    width: 4px;
+    height: 40px;    
+    background: #41F6D7;
+}
+
+.main-heading__h1 {
+    font-size: 28px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+}
+
+.main-services {
+    display: flex;
+    overflow: auto;
+    scrollbar-width: none;
+    min-width: 504px;
+    height: 40px;
+    margin-left: 30px;
+    margin-bottom: 20px;	
+}
+
+.btn-service {
+    min-width: auto;
+    border: solid 2px #FFFFFF;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+
+.btn-service:hover {
+    border: 2px solid #B8FFEC;
+}
+
+.main-services__btn-text {
+    margin: auto;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    color: #7E7E82;
+    width: 222px;
+    height: 24px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    height: auto;   
+}
+
+.info__section1 {
+    overflow: hidden;
+    min-width: 288px;
+    height: 90px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info__section--text {
+    overflow: auto;
+    scrollbar-width: none;
+    color: #5f5f5f;
+    text-align: left;
+    line-height: 18px;
+    letter-spacing: 0.20000000298023224px;
+    font-size: 14px;
+    min-width: 280px;
+    height: 80px; 
+    margin: auto;
+    padding: 10px;
+}
+
+.info__section2 {
+    width: auto;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.info__section--button-visible {
+    display: flex;
+    width: 132px;
+    height: 24px;
+    background-color: white;
+    border: none;
+    padding: 0;
+}
+
+.info__section--img {
+    width: 15px;
+    height: 15px;
+}
+
+.info__section--p {
+    width: 100px;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.info__section3 {
+    min-width: 320px;
+    min-height: 176px;
+    margin-bottom: 30px;
+}
+
+.img {
+    min-width: 320px;
+    height: 176px;
+}
+
+
+@media (min-width: 784px) and (max-width: 1120px) {
+    html {
+        min-width: 784px;
+    }
+    .main-services {
+        display: flex;
+        overflow: auto;
+        scrollbar-width: none;
+        min-width: 776px;
+        height: 40px;
+        margin-left: 30px;
+        margin-bottom: 20px;	
+    }
+    .info {
+        display: flex;
+        flex-flow: column wrap;
+        width: 720px;
+        height: 208px; 
+        margin-bottom: 40px;  
+    }
+    .img {
+        width: 360px;
+        height: 208px;
+    }
+    .info__section1 {
+        overflow: hidden;
+        width: 312px;
+        height: 160px;
+        margin-left: 20px;
+    }    
+    .info__section--text {
+        overflow: auto;
+        scrollbar-width: none;
+        color: #5f5f5f;
+        text-align: left;
+        line-height: 18px;
+        letter-spacing: 0.20000000298023224px;
+        font-size: 14px;
+        min-width: 312px;
+        height: 160px; 
+        margin: auto;
+        padding: 0;
+    }
+    .info__section2 {
+        width: auto;
+        height: 20px;
+        margin: 0 0 0 30px;
+    }
+    .info__section--button-visible {
+        display: flex;
+        width: 125px;
+        height: 20px;
+        background-color: white;
+        border: none;
+        padding: 0;
+    }
+    .info__section--p {
+        width: 100px;
+        height: 24px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+@media (min-width: 1121px) and (max-width: 4000px) {
+    html {
+        min-width: 1120px;
+    }
+    .main {
+        overflow: visible;
+        margin-top: 30px;
+    }
+    .block-header {
+        float: right;
+        width: 400px;
+        height: auto;
+        border-bottom: solid 1px #D9FFF5;
+        margin-bottom: 10px;
+    }
+    .main-services {
+        display: flex;
+        width: 1063px;
+        height: 36px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .btn-service {
+        min-width: auto;
+        border: solid 2px #FFFFFF;
+        background: #FFFFFF;
+        border-radius: 6px;
+    }
+    .main-heading {
+        margin-top: 30px;
+    }
+    .info {
+        display: flex;
+        flex-flow: column wrap;
+        width: 1063px;
+        height: 310px; 
+        margin-bottom: 40px;  
+    }
+    .info__section1 {
+        overflow: hidden;
+        width: 490px;
+        height: 160px;
+        margin: 30px 60px 20px 20px;
+    }
+    .info__section--text {
+        overflow: auto;
+        scrollbar-width: none;
+        color: #5f5f5f;
+        text-align: left;
+        line-height: 18px;
+        letter-spacing: 0.20000000298023224px;
+        font-size: 14px;
+        min-width: 312px;
+        height: 160px; 
+        margin: auto;
+        padding: 0;
+    }
+    .info__section2 {
+        width: auto;
+        height: 20px;
+        margin: 20px 0 0 30px;
+    }
+    .info__section--button-visible {
+        display: flex;
+        width: 125px;
+        height: 20px;
+        background-color: white;
+        border: none;
+        padding: 0;
+    }
+    .info__section--p {
+        width: 100px;
+        height: 24px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .info__section3 {
+        width: 532px;
+        height: 307px;
+        margin: 20px 0 50px 0;
+    }
+    .img {
+        width: 532px;
+        height: 307px;
+    }
+}
